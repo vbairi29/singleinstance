@@ -12,6 +12,6 @@ func GetLockFilePid(filename string) (pid int, err error) {
 		return
 	}
 
-	vid, err = strconv.Atoi(string(contents))
+	pid, err = strconv.Atoi(string(contents))
 	return
 }
